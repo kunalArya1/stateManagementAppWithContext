@@ -19,11 +19,22 @@ const Home = () => {
         <Text
           style={{
             color: theme == 'dark' ? 'white' : 'black',
+            position: 'absolute',
+            top: '50%',
+            left: '44%',
           }}
         >
-          Hello World
+          Kunal Kumar Arya
         </Text>
-        <Button title="Change Theme" onPress={() => toggleTheme()} />
+        <View
+          style={{
+            position: 'absolute',
+            top: '43%',
+            left: '43%',
+          }}
+        >
+          <Button title="Change Theme" onPress={() => toggleTheme()} />
+        </View>
       </View>
     </>
   );
